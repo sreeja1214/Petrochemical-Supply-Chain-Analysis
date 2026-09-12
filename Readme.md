@@ -1,216 +1,106 @@
-**# Trade, Supply Chain \& Energy Analytics**
-
-
-
-
-
-**An end-to-end data analytics project analyzing trade, supply chain, and energy datasets to extract meaningful insights and support business decision-making, with a focus on India.**
-
-
-
-**## Overview**
-
-
-
-**In the modern data-driven economy, organizations rely heavily on data analytics to make strategic decisions. This project integrates multiple domains — trade, logistics, and energy — to provide a comprehensive understanding of economic and operational dynamics. It follows a complete pipeline: data quality assessment, cleaning, exploratory data analysis (EDA), statistical validation, feature engineering, machine learning, SQL-based querying, and dashboard visualization using Power BI.**
-
-
-
-**## Objectives**
-
-
-
-**- Analyze import-export trends and evaluate trade balance**
-
-**- Identify inefficiencies and risks in supply chain operations**
-
-**- Study energy consumption patterns and renewable energy adoption**
-
-**- Validate insights using statistical methods**
-
-**- Enhance datasets using feature engineering**
-
-**- Build a predictive model using machine learning**
-
-**- Derive business insights using SQL queries**
-
-**- Present findings through interactive dashboards**
-
-
-
-**## Data Sources**
-
-
-
-**- Supply chain dataset**
-
-**- Petrol**
-
-**- Chemical**
-
-**- Imports**
-
-**- Exports**
-
-**- Logistics dataset**
-
-**- Energy dataset**
-
-
-
-**## Pipeline**
-
-
-
-**1. \*\*Data Quality Audit \& Preparation\*\* — assessed column meanings, data types, and distributions; identified missing values, duplicates, inconsistent formats, aggregated "Total" rows, and irrelevant columns.**
-
-**2. \*\*Data Cleaning\*\* — removed duplicate/irrelevant rows, dropped aggregated rows, converted year columns to numeric, handled missing values, standardized column names, filtered for India-specific analysis.**
-
-**3. \*\*Data Transformation \& Standardization\*\* — reshaped data via melt/pivot, combined imports and exports into a unified trade dataset, and standardized column names, data types, units, categorical values, and date/year formats across all sources.**
-
-**4. \*\*Exploratory Data Analysis (EDA)\*\* — trade, supply chain, and energy trends and relationships.**
-
-**5. \*\*Statistical Analysis\*\* — descriptive statistics, correlation analysis, and hypothesis testing.**
-
-**6. \*\*Feature Engineering\*\* — created trade, supply chain, and energy features to improve interpretability and predictive power.**
-
-**7. \*\*Machine Learning\*\* — Linear Regression model to predict trade balance.**
-
-**8. \*\*SQL (Business Queries)\*\* — extracted key business insights (top products, profit, category performance, risk, cost, energy trends).**
-
-**9. \*\*Dashboards (Power BI)\*\* — three interactive dashboards: Trade Performance, Supply Chain \& Logistics, and Energy \& Sustainability.**
-
-
-
-**## Key Insights**
-
-
-
-**- \*\*Persistent trade imbalance\*\* — imports consistently exceed exports, with the deficit widening sharply after 2020.**
-
-**- \*\*Logistics inefficiency\*\* — traffic conditions, especially expressway disruptions, are the leading driver of longer delivery times.**
-
-**- \*\*Slow renewable adoption\*\* — renewable energy share is growing, but fossil fuels still dominate India's energy mix.**
-
-
-
-**## Statistical Validation**
-
-
-
-**All three hypothesis tests (α = 0.05) were rejected, confirming:**
-
-**- A genuine trade imbalance between imports and exports**
-
-**- A real impact of traffic conditions on delivery/travel time**
-
-**- Real growth in renewable energy share over time**
-
-
-
-**## Machine Learning**
-
-
-
-**- \*\*Model:\*\* Linear Regression (chosen for simplicity and interpretability)**
-
-**- \*\*Objective:\*\* Predict trade balance**
-
-**- \*\*Process:\*\* Feature selection → train-test split → model training → prediction**
-
-**- \*\*Evaluation metrics:\*\* Mean Absolute Error (MAE), R² Score**
-
-**- \*\*Conclusion:\*\* The model effectively captures the relationship between imports and exports.**
-
-
-
-**## Dashboards (Power BI)**
-
-
-
-**| Dashboard | KPIs |**
-
-**|---|---|**
-
-**| Trade Performance | Total Exports (48M), Total Imports (107M), Trade Balance (-59M) |**
-
-**| Supply Chain \& Logistics | Avg Supply Risk (34.08), Avg Travel Time (20.78), Avg Operational Cost (₹44.25) |**
-
-**| Energy \& Sustainability | Total Energy Consumption (9.36K), Avg Renewable Share (7.99%), Total Electricity Demand (16.50K) |**
-
-
-
-**## Business Recommendations**
-
-
-
-**1. Reduce dependency on imports**
-
-**2. Improve logistics efficiency**
-
-**3. Optimize operational costs**
-
-**4. Increase renewable energy investment**
-
-**5. Diversify export markets**
-
-
-
-**## Conclusion**
-
-
-
-**This project demonstrates a complete data analytics pipeline from data preparation to visualization. It highlights key issues such as trade imbalance, supply chain inefficiencies, and increasing energy demand — grounded in cleaned data, validated statistically, and made actionable through models, SQL, and dashboards.**
-
-
-
-**## Future Scope**
-
-
-
-**- Use advanced ML models**
-
-**- Include real-time data**
-
-**- Expand to global analysis**
-
-**- Improve predictive accuracy**
-
-
-
-**## Project Structure (suggested)**
-
-
-
-**```**
-
-**├── data/                  # Raw and cleaned datasets**
-
-**├── notebooks/             # EDA, statistical analysis, feature engineering, ML**
-
-**├── sql/                   # Business query scripts**
-
-**├── dashboards/            # Power BI (.pbix) files**
-
-**├── reports/               # Final report and presentation**
-
-**└── README.md**
-
-**```**
-
-
-
-**## Tools \& Technologies**
-
-
-
-**- \*\*Data Cleaning \& Analysis:\*\* Python (pandas, numpy)**
-
-**- \*\*Visualization:\*\* matplotlib / seaborn, Power BI**
-
-**- \*\*Statistics:\*\* scipy / statsmodels**
-
-**- \*\*Machine Learning:\*\* scikit-learn (Linear Regression)**
-
-**- \*\*Querying:\*\* SQL**
+<div align="center" style="border: 2px solid #ccc; padding: 20px; border-radius: 12px; width: 80%; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.15);">
+    <img
+        width="180"
+        height="220"
+        alt="Logo - SURE ProEd"
+        src="https://github.com/user-attachments/assets/88fa5098-24b1-4ece-87df-95eb920ea721"
+        style="border-radius: 10px;"
+    />
+<h1 align="center" style="font-family: Arial; font-weight: 600; margin-top: 15px;">SURE ProEd (formerly SURE Trust) 
+      </h1>
+<h2 style="color: #2b6cb0; font-family: Arial;">Skill Upgradation for Rural youth Empowerment Trust</h2>
+</div>
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
+<div style="padding: 20px; border: 2px solid #ddd; border-radius: 12px; width: 90%; margin: auto; background: #fafafa; font-family: Arial;">
+<h2 style = "color:#333;"> Student Details </h2>
+<div align = "left" style ="margin: 20px; font-size: 16px;">
+    <p><strong>Name:</strong>Brungi Sreeja</p>
+    <p><strong>Email ID:</strong>sreejag2dataanalytics@gmail.com</p>
+</div>
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
+<h2 style="color:#333;"> Course Details </h2>
+<div align="left" style="margin: 20px; font-size: 16px;">
+    <p><strong>Course Opted:</strong>Data Analytics</p>
+    <p><strong>Instructor Name:</strong>V Keerthana</p>
+</div>
+<div align="left" style="margin: 20px; font-size: 16px;">
+    <p><strong>Duration:</strong>6 months</p>
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
+<h2 style="color:#333;"> Trainer Details </h2>
+<div align="left" style="margin: 20px; font-size: 16px;">
+<p><strong>Trainer Name:</strong>V Keerthana</p>
+<p><strong>Trainer Email ID:</strong>keerthanavasudevan54@gmail.com</p>
+<p><strong>Trainer Designation:</strong>Data Analyst-EXL</p>
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
+    
+## Table of Contents
+- [Course Learning]
+- [Projects Completed]
+- [Project Introduction]
+- [Technologies Used]
+- [Roles and Responsibilities]
+- [Project Report]
+- [Learnings from LST & SST]
+- [Community Services]
+- [Acknowledgments]
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
+
+## Overall Learning
+During this internship, I gained hands-on, practical experience across the full data analytics workflow. I learned to build interactive dashboards using **Power BI** and **Tableau**, work with **SQL** to query and analyze structured datasets, and use **Python** (Pandas, Jupyter Notebook) for exploratory data analysis. I also learned to apply **hypothesis testing** and statistical methods to validate assumptions and support data-driven decisions.
+
+Beyond the technical tools, this internship strengthened my problem-solving ability, attention to detail, and skill in translating raw data into clear, actionable business insights. It also taught me the importance of documentation, structured reporting, and communicating findings effectively to different stakeholders.
+
+<h2 style="color:#333;"> Projects Completed </h2>
+<div align="left" style="margin: 20px; font-size: 16px;">
+<p><strong><a href="#project1">Project 1:</a></strong>End to End Sales & Customer Analytics with Business Insights</p>
+<p><strong><a href="#project2">Project 2:</a></strong>End to End Supplychain and Operational Analysis  of Petroleum,Chemical and Transportation</p>
+</div>
+
+<!-- Project  -->
+<h3 id="project2">Project 2:End to End Supplychain and Operational Analysis of Petroleum,Chemical and Transportation</h3>
+<p>
+  Analyzed supply chain and operational data across petroleum, chemical, and transportation sectors to identify inefficiencies, and built dashboards/reports to visualize key metrics and support process improvement decisions.
+</p>
+<p>
+  <a href="Course report/Documentation.pdf" target="_blank"><strong> View Full Project Report</strong></a>
+</p>
+
+<hr style="height:1px; border-top:1px solid #ccc; width:80%;" />
+
+## References
+-Wikipedia
+-Kaggle dataset
+
+---
+## Learnings from LST and SST
+
+The Life Skills Training (LST) and Soft Skills Training (SST) sessions were a valuable part of this internship, complementing the technical learning with practical life and workplace skills. Through these sessions, I learned:
+
+- **Communication skills** – How to express ideas clearly and confidently, both in group discussions and one-on-one interactions.
+- **Time management** – Techniques to prioritize tasks effectively and meet deadlines without compromising quality.
+- **Teamwork and collaboration** – The importance of working effectively within a team, respecting diverse perspectives, and contributing constructively to group goals.
+- **Professional etiquette** – Workplace behavior, email communication, and how to present myself professionally in meetings and interviews.
+- **Resume building and interview preparation** – Practical guidance on structuring a resume and confidently handling interview questions.
+- **Self-confidence and public speaking** – Overcoming hesitation while speaking in front of groups and presenting ideas.
+Overall, these sessions helped me grow not just as a technically skilled data analyst, but as a well-rounded professional ready to navigate real-world workplace dynamics.
+---
+## Community Services
+During my internship period, I participated in multiple community-oriented activities as part of SURE Trust's initiative to build socially responsible professionals alongside technical skill development.
+## Activities Involved
+
+**Tree Plantation Drive** – Participated by planting trees and contributing to environmental improvement.I planted in open place where there are no plants in my surroundings.
+
+**Helping Elder Citizens** – Donated fruits to senior/elder citizens at a government hospital near my locality, as well as to those living on the streets, and spent time offering them support and companionship.I had great experience in serving them as they were very happy when we provided them some fruits.
+## Impact / Contribution
+Actively participated in promoting a greener and cleaner surroundings.
+Offered personal assistance to elder citizens, strengthening community bonds.
+Improved skills in communication, coordination, and social responsibility.
+## Photos
+<img width="557" height="736" alt="image" src="Community services1.jpeg" />
+<img width="565" height="737" alt="image" src="Community services2.jpeg" />
+
+---
+## Acknowledgments
+I would like to express my sincere gratitude to Prof. Radhakumari Challa Mam and my mentor Keerthana Mam for their constant guidance, support, and encouragement throughout this internship. Their mentorship played a key role in helping me develop both my technical skills and a sense of social responsibility. I am also thankful to SURE ProEd (formerly SURE Trust) for providing this valuable learning opportunity.
+Prof. Radhakumari Challa , Executive Director and Founder - SURE Trust
 
